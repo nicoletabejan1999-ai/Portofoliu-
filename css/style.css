@@ -1190,7 +1190,8 @@ header {
    RESPONSIVE DESIGN
    =================================== */
 
-@media (max-width: 1024px) {
+/* Tablete - rezoluții până la 1440px */
+@media (max-width: 1440px) {
     /* Layout general pentru tablete */
     .container {
         padding: 0 25px;
