@@ -1190,14 +1190,25 @@ header {
    RESPONSIVE DESIGN
    =================================== */
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+    /* Layout general pentru tablete */
+    .container {
+        padding: 0 25px;
+    }
+
+    /* Toate secțiunile */
+    section {
+        padding: 80px 25px !important;
+    }
+
+    /* Hero section */
     .hero {
-        padding: 120px 20px 60px;
+        padding: 120px 25px 60px !important;
         min-height: auto;
     }
 
     .hero-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         text-align: center;
         gap: 40px;
     }
@@ -1228,6 +1239,7 @@ header {
     .hero-cta .btn-secondary {
         width: 100%;
         max-width: 300px;
+        display: block;
     }
 
     .hero-social {
@@ -1239,39 +1251,64 @@ header {
         height: 350px;
     }
 
+    /* À propos section - FIX pentru suprapunere */
     .apropos-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
     }
 
     .apropos-highlights {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
     }
 
+    .apropos-skills-preview {
+        width: 100%;
+    }
+
+    /* Brand Content & Design */
+    .projets-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .design-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .projet-card,
+    .design-item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Durabilité section */
     .durabilite-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
     }
 
+    /* Contact section - FIX pentru suprapunere */
     .contact-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 40px;
     }
 
+    .contact-info,
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    /* Footer */
     .footer-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         text-align: center;
         gap: 30px;
     }
 
     .social-links {
         justify-content: center;
-    }
-
-    .projet-card,
-    .design-item {
-        max-width: 600px;
-        margin: 0 auto;
     }
 }
 
